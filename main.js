@@ -10,7 +10,7 @@ document.querySelectorAll('.card-button').forEach(button => {
     });
 
     button.addEventListener('click', () => {
-        window.location.href = '/MyRoutine/Training';
+        window.location.href = '/MyRoutine/training';
     });
 });
 
