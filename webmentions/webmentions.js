@@ -9,7 +9,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 // webmentions
-const WEBSITE = 'jouwwebsite.com';
+const WEBSITE = 'https://hellokittyuncensored.github.io/MyRoutine/';
 
 function getType(type) {
     if (type === 'like-of')      return 'Like';
