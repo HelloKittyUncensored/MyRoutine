@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+
+    <link rel="alternate" type="application/rss+xml" title="My Routine" href="feed.xml">
+        <link rel="webmention" href="https://webmention.io/jouwwebsite.com/webmention">
+    <link rel="pingback" href="https://webmention.io/jouwwebsite.com/xmlrpc">
+
+    <link rel="stylesheet" href="planner.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+</head>
+<body>
+
+   <header>
+        <h1>My Routine</h1>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../training" class="nav-link">Training</a></li>
+                <li class="nav-item"><a href="../planner" class="nav-link">Planner</a></li>
+                <li class="nav-item"><a href="../progress" class="nav-link">Progress</a></li>
+                <li class="nav-item"><a href="../webmentions" class="nav-link">Mentions</a></li>
+            </ul>
+        </nav>
+   </header>
+
+   <main>
+    <h1>Fitness Planner</h1>
+    <p>Welcome to the Fitness Planner! Here, you can plan and organize your workouts for optimal results.</p>
+
+        <div class="planner">
+            <form>
+                <label for="date">Datum:</label>
+                <input type="date" id="date">
+                <p id="date_error" class="error"></p>
+
+                <label for="time">Uur:</label>
+                <input type="time" id="time">
+                <p id="time_error" class="error"></p>
+
+                <label for="routine">Routine:</label>
+                <input type="text" id="routine" placeholder="bv. Push / Pull / Legs">
+                <p id="routine_error" class="error"></p>
+
+                <button onclick="saveWorkout()">Opslaan</button>
+            </form>
+            
+            <h3>Geplande dagen:</h3>
+            <ul id="plannerList"></ul>
+
+            <h3>Bezoeken: <span id="counter">0</span></h3>
+        </div>    
+
+   </main>
+
+   <footer>
+        <p>29/03/2026 My Routine. All rights reserved.</p>
+        <p>Created by Louis Haegeman student at Odisee Hogeschool Gent</p>
+    </footer>
+
+    <script src="planner.js"></script>
+</body>
+</html>
